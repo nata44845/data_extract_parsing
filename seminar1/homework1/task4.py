@@ -30,7 +30,8 @@ if response.status_code == 200:
     data = json.loads(response.text)
     items = data["results"]
     for item in sorted(items, key = lambda item: item['name']):
-        print(f"{item['name']}, адрес: {item['location']['formatted_address']}, рейтинг {item.get('rating','не определен')}")
+        print(f"{item['name']}, адрес: {item['location'].get('formatted_address', 'не определен') \
+        if item.get('location') else 'нет адреса'}, рейтинг {item.get('rating','не определен')}")
 else:
     print("Запрос завершился ошибкой")
     print(response.status_code)
