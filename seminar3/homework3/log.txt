@@ -1,0 +1,94 @@
+{'_id': -2017526622078882557, 'category': 'Books', 'title': 'The Star-Touched Queen', 'price': 32.3, 'in_stock': 12, 'description': 'Fate and fortune. Power and passion. What does it take to be the queen of a kingdom when you’re only seventeen?Maya is cursed. With a horoscope that promises a marriage of death and destruction, she has earned only the scorn and fear of her father’s kingdom. Content to follow more scholarly pursuits, her whole world is torn apart when her father, the Raja, arranges a weddi Fate and fortune. Power and passion. What does it take to be the queen of a kingdom when you’re only seventeen?Maya is cursed. With a horoscope that promises a marriage of death and destruction, she has earned only the scorn and fear of her father’s kingdom. Content to follow more scholarly pursuits, her whole world is torn apart when her father, the Raja, arranges a wedding of political convenience to quell outside rebellions. Soon Maya becomes the queen of Akaran and wife of Amar. Neither roles are what she expected: As Akaran’s queen, she finds her voice and power. As Amar’s wife, she finds something else entirely: Compassion. Protection. Desire…But Akaran has its own secrets—thousands of locked doors, gardens of glass, and a tree that bears memories instead of fruit. Soon, Maya suspects her life is in danger. Yet who, besides her husband, can she trust? With the fate of the human and Otherworldly realms hanging in the balance, Maya must unravel an ancient mystery that spans reincarnated lives to save those she loves the most…including herself. ...more'}
+{'_id': 6394346522815736288, 'category': 'Fantasy', 'title': 'The Star-Touched Queen', 'price': 32.3, 'in_stock': 12, 'description': 'Fate and fortune. Power and passion. What does it take to be the queen of a kingdom when you’re only seventeen?Maya is cursed. With a horoscope that promises a marriage of death and destruction, she has earned only the scorn and fear of her father’s kingdom. Content to follow more scholarly pursuits, her whole world is torn apart when her father, the Raja, arranges a weddi Fate and fortune. Power and passion. What does it take to be the queen of a kingdom when you’re only seventeen?Maya is cursed. With a horoscope that promises a marriage of death and destruction, she has earned only the scorn and fear of her father’s kingdom. Content to follow more scholarly pursuits, her whole world is torn apart when her father, the Raja, arranges a wedding of political convenience to quell outside rebellions. Soon Maya becomes the queen of Akaran and wife of Amar. Neither roles are what she expected: As Akaran’s queen, she finds her voice and power. As Amar’s wife, she finds something else entirely: Compassion. Protection. Desire…But Akaran has its own secrets—thousands of locked doors, gardens of glass, and a tree that bears memories instead of fruit. Soon, Maya suspects her life is in danger. Yet who, besides her husband, can she trust? With the fate of the human and Otherworldly realms hanging in the balance, Maya must unravel an ancient mystery that spans reincarnated lives to save those she loves the most…including herself. ...more'}
+Задвоение книг: {'_id': -2017526622078882557, 'category': 'Books', 'title': 'The Star-Touched Queen', 'price': 46.02, 'in_stock': 14, 'description': "Fate and fortune. Power and passion. What does it take to be the queen of a kingdom when you're only seventeen?Maya is cursed. With a horoscope that promises a marriage of Death and Destruction, she has earned only the scorn and fear of her father's kingdom. Content to follow more scholarly pursuits, her whole world is torn apart when her father, the Raja, arranges a weddi Fate and fortune. Power and passion. What does it take to be the queen of a kingdom when you're only seventeen?Maya is cursed. With a horoscope that promises a marriage of Death and Destruction, she has earned only the scorn and fear of her father's kingdom. Content to follow more scholarly pursuits, her whole world is torn apart when her father, the Raja, arranges a wedding of political convenience to quell outside rebellions. Soon Maya becomes the queen of Akaran and wife of Amar. Neither roles are what she expected: As Akaran's queen, she finds her voice and power. As Amar's wife, she finds something else entirely: Compassion. Protection. Desire...But Akaran has its own secrets -- thousands of locked doors, gardens of glass, and a tree that bears memories instead of fruit. Soon, Maya suspects her life is in danger. Yet who, besides her husband, can she trust? With the fate of the human and Otherworldly realms hanging in the balance, Maya must unravel an ancient mystery that spans reincarnated lives to save those she loves the most. . .including herself.A lush and vivid story that is steeped in Indian folklore and mythology. The Star-touched Queen is a novel that no listener will soon forget. ...more"}
+Задвоение книг: {'_id': 6394346522815736288, 'category': 'Fantasy', 'title': 'The Star-Touched Queen', 'price': 46.02, 'in_stock': 14, 'description': "Fate and fortune. Power and passion. What does it take to be the queen of a kingdom when you're only seventeen?Maya is cursed. With a horoscope that promises a marriage of Death and Destruction, she has earned only the scorn and fear of her father's kingdom. Content to follow more scholarly pursuits, her whole world is torn apart when her father, the Raja, arranges a weddi Fate and fortune. Power and passion. What does it take to be the queen of a kingdom when you're only seventeen?Maya is cursed. With a horoscope that promises a marriage of Death and Destruction, she has earned only the scorn and fear of her father's kingdom. Content to follow more scholarly pursuits, her whole world is torn apart when her father, the Raja, arranges a wedding of political convenience to quell outside rebellions. Soon Maya becomes the queen of Akaran and wife of Amar. Neither roles are what she expected: As Akaran's queen, she finds her voice and power. As Amar's wife, she finds something else entirely: Compassion. Protection. Desire...But Akaran has its own secrets -- thousands of locked doors, gardens of glass, and a tree that bears memories instead of fruit. Soon, Maya suspects her life is in danger. Yet who, besides her husband, can she trust? With the fate of the human and Otherworldly realms hanging in the balance, Maya must unravel an ancient mystery that spans reincarnated lives to save those she loves the most. . .including herself.A lush and vivid story that is steeped in Indian folklore and mythology. The Star-touched Queen is a novel that no listener will soon forget. ...more"}
+
+Категории книг
+0. Academic
+1. Add a comment
+2. Adult Fiction
+3. Art
+4. Autobiography
+5. Biography
+6. Books
+7. Business
+8. Childrens
+9. Christian
+10. Christian Fiction
+11. Classics
+12. Contemporary
+13. Crime
+14. Cultural
+15. Default
+16. Erotica
+17. Fantasy
+18. Fiction
+19. Food and Drink
+20. Health
+21. Historical
+22. Historical Fiction
+23. History
+24. Horror
+25. Humor
+26. Music
+27. Mystery
+28. New Adult
+29. Nonfiction
+30. Novels
+31. Paranormal
+32. Parenting
+33. Philosophy
+34. Poetry
+35. Politics
+36. Psychology
+37. Religion
+38. Romance
+39. Science
+40. Science Fiction
+41. Self Help
+42. Sequential Art
+43. Short Stories
+44. Spirituality
+45. Sports and Games
+46. Suspense
+47. Thriller
+48. Travel
+49. Womens Fiction
+50. Young Adult
+
+Книги из категории Poetry
+{'title': 'A Light in the Attic', 'price': 51.77}
+{'title': 'The Black Maria', 'price': 52.15}
+{'title': "Shakespeare's Sonnets", 'price': 20.66}
+{'title': 'Olio', 'price': 23.88}
+{'title': "You can't bury them all: Poems", 'price': 33.63}
+{'title': 'Slow States of Collapse: Poems', 'price': 57.31}
+{'title': 'Untitled Collection: Sabbath Poems 2014', 'price': 14.27}
+{'title': 'Poems That Make Grown Women Cry', 'price': 14.19}
+{'title': 'Night Sky with Exit Wounds', 'price': 41.05}
+{'title': 'salt.', 'price': 46.78}
+{'title': 'Quarter Life Poetry: Poems for the Young, Broke and Hangry', 'price': 50.89}
+{'title': 'Out of Print: City Lights Spotlight No. 14', 'price': 53.64}
+{'title': 'Les Fleurs du Mal', 'price': 29.04}
+{'title': 'Howl and Other Poems', 'price': 40.45}
+{'title': 'Leave This Song Behind: Teen Poetry at Its Best', 'price': 51.17}
+{'title': 'The Collected Poems of W.B. Yeats (The Collected Works of W.B. Yeats #1)', 'price': 15.42}
+{'title': 'The Crossover', 'price': 38.77}
+{'title': 'Booked', 'price': 17.49}
+{'title': 'Twenty Love Poems and a Song of Despair', 'price': 30.95}
+
+Количество книг с ценой от 0 до 10: 0
+Количество книг с ценой от 10 до 20: 390
+Количество книг с ценой от 20 до 30: 412
+Количество книг с ценой от 30 до 40: 386
+Количество книг с ценой от 40 до 50: 410
+Количество книг с ценой от 50 до 60: 396
+Количество книг с ценой от 60 до 70: 0
+Количество книг с ценой от 70 до 80: 0
+Количество книг с ценой от 80 до 90: 0
+Количество книг с ценой от 90 до 100: 0
+
+Количество книг, содержащих 'rain': 18
+Количество книг в категориях Philosophy, Womens Fiction: 28
+Количество книг в категориях сразу и Books, Womens Fiction: 0
+Количество книг не в категории Books: 999

@@ -1,4 +1,4 @@
-from lxml_test import etree
+from lxml import etree
 
 def print_tree(element, depth=0):
     print("-"*depth+element.tag)
