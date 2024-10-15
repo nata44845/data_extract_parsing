@@ -1,6 +1,7 @@
 *.zip
 *.json
 !books_data.json
+!inflation.json
 
 /venv
 /**/venv/*
