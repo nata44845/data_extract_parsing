@@ -17,10 +17,8 @@ news_themes = ['economics','politics','society','incident']
 item_list = []
 
 for theme in news_themes:
-    html_file = Path(theme+'.html')
     response = requests.get(url + '/'+'economics', headers = headers)
     tree = html.fromstring(response.text)
-
 
     items = tree.xpath("//div[contains(@class,'newsitem_height_fixed')]")
     for item in items:
