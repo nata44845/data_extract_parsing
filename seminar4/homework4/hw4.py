@@ -1,9 +1,6 @@
-from idlelib.replace import replace
-
 import requests
-from lxml import html, etree
+from lxml import html
 from pprint import pprint
-from pathlib import Path
 from time import sleep
 import csv
 
