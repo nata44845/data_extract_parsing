@@ -11,7 +11,7 @@ BOT_NAME = "bookparser"
 
 SPIDER_MODULES = ["bookparser.spiders"]
 NEWSPIDER_MODULE = "bookparser.spiders"
-
+IMAGES_STORE = 'photos'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = "YaBrowser/24.7.9.974"
@@ -62,9 +62,10 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "bookparser.pipelines.BookparserPipeline": 300,
-#}
+ITEM_PIPELINES = {
+   "bookparser.pipelines.BookparserPipeline": 300,
+    "bookparser.pipelines.BookPhotosPipeline": 200,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

@@ -18,7 +18,7 @@ class JobparserPipeline:
     def process_item(self, item, spider):
         coll = self.mongo_base[spider.name]
         item['_id'] = str(item['url']).split('?',1)[0].rsplit('/', 1)[-1]
-
+        print()
         try:
             coll.insert_one(item)
         except DuplicateKeyError as e:
