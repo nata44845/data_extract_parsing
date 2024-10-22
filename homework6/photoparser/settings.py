@@ -11,7 +11,7 @@ BOT_NAME = "photoparser"
 
 SPIDER_MODULES = ["photoparser.spiders"]
 NEWSPIDER_MODULE = "photoparser.spiders"
-
+IMAGES_STORE = 'photos'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "photoparser (+http://www.yourdomain.com)"
@@ -62,9 +62,9 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "photoparser.pipelines.PhotoparserPipeline": 300,
-#}
+ITEM_PIPELINES = {
+   "photoparser.pipelines.PhotoparserPipeline": 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

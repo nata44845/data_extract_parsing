@@ -1,5 +1,8 @@
 import scrapy
-
+from scrapy.http import HtmlResponse
+from ..items import PhotoparserItem
+from scrapy.loader import ItemLoader
+from itemloaders.processors import MapCompose
 
 class UpsplashSpider(scrapy.Spider):
     name = "upsplash"
@@ -10,31 +13,26 @@ class UpsplashSpider(scrapy.Spider):
         self.start_urls = [f"https://unsplash.com/s/photos/{kwargs.get('query')}"]
 
     def parse(self, response):
-        pass
+        links = response.xpath("//a[@class='zNNw1']/@href").getall()
+        for i, link in enumerate(links):
+            links[i] = f"https://unsplash.com{link}"
+        print(links)
+        for link in links:
+            yield response.follow(link, callback = self.parse_img)
+        print()
 
-    # def parse(self, response):
-    #     with open('book24.html', 'w', encoding='utf-8') as file:
-    #         file.write(response.text)
+    def parse_img(self, response: HtmlResponse):
+        loader = ItemLoader(item=PhotoparserItem(), response=response)
+        loader.default_input_processor = MapCompose(str.strip)
 
-    #     links = response.xpath("//a[@class='product-card__name']")
-    #     print(links)
-    #     for link in links:
-    #         yield response.follow(link, callback = self.parse_book)
-    #     print()
+        name = response.xpath("//h1[@class='vev3s']/text()").get()
+        loader.add_value('name', name)
 
-    # def parse_book(self, response: HtmlResponse):
-    #     # name = response.xpath("//h1/text()").get()
-    #     # price = response.xpath("//span[@class='app-price product-sidebar-price__price']/text()").get()
-    #     # url = response.url
-    #     # photos = response.xpath("//picture[@class='product-poster__main-picture']/source[1]/@srcset \
-    #     #                     |//picture[@class ='product-poster__main-picture']/source[1]/@data-srcset"
-    #     #     ).getall()
-    #     # print(photos)
-    #     # yield BookparserItem(name=name, price = price, url = url, photos = photos)
-    #     loader = ItemLoader(item=BookparserItem(), response = response)
-    #     loader.add_xpath('name', "//h1/text()")
-    #     loader.add_xpath('price', "//span[@class='app-price product-sidebar-price__price']/text()")
-    #     loader.add_value('url', response.url)
-    #     loader.add_xpath('photos', "//picture[@class='product-poster__main-picture']/source[1]/@srcset \
-    #                          |//picture[@class ='product-poster__main-picture']/source[1]/@data-srcset")
-    #     yield loader.load_item()
+        categories = response.xpath('//div[@class="zDHt2 N9mmz"]/a/text()').getall()
+        loader.add_value('categories', categories)
+        print()
+        image_url = response.xpath("//div[@class='WxXog']/img/@src").get()
+        loader.add_value('image_urls', image_url)
+
+
+        yield loader.load_item()
