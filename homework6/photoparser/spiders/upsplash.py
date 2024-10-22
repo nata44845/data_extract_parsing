@@ -5,6 +5,8 @@ from scrapy.loader import ItemLoader
 from itemloaders.processors import MapCompose
 from pprint import pprint
 
+__all__ = ['UpsplashSpider']
+
 class UpsplashSpider(scrapy.Spider):
     name = "upsplash"
     allowed_domains = ["unsplash.com"]
@@ -18,9 +20,9 @@ class UpsplashSpider(scrapy.Spider):
         for i, link in enumerate(links):
             links[i] = f"https://unsplash.com{link}"
         pprint(links)
-        yield response.follow(links[0], callback=self.parse_img)
-        # for link in links:
-        #     yield response.follow(link, callback = self.parse_img)
+        #yield response.follow(links[1], callback=self.parse_img)
+        for link in links:
+            yield response.follow(link, callback = self.parse_img)
         print()
 
     def parse_img(self, response: HtmlResponse):
@@ -33,7 +35,7 @@ class UpsplashSpider(scrapy.Spider):
         categories = response.xpath('//a[@class="m7tXD jhw7y TYpvC"]/text()').getall()
         loader.add_value('categories', categories)
 
-        image_urls = response.xpath("//div[@class='WxXog']/img/@srcset").get()
+        image_urls = response.xpath("//img[@class='I7OuT DVW3V L1BOa']/@srcset").getall()[0].split("?")[0]
         loader.add_value('image_urls', image_urls)
 
         yield loader.load_item()

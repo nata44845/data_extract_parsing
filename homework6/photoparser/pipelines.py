@@ -12,6 +12,8 @@ import scrapy
 class PhotoparserPipeline:
 
     def process_item(self, item, spider):
+        with open('cats.csv', 'a', encoding='utf-8') as file:
+            print(f"{item['name']}, {item['categories']},{item['image_urls']}", file=file)
         return item
 
 
@@ -19,8 +21,8 @@ class PhotoPipeline(ImagesPipeline):
 
     def get_media_requests(self, item, spider):
         print(item)
-        if item['img_urls']:
-            for img_url in item['img_urls']:
+        if item['image_urls']:
+            for img_url in item['image_urls']:
                 try:
                     print(img_url)
                     yield scrapy.Request(img_url)
@@ -30,6 +32,5 @@ class PhotoPipeline(ImagesPipeline):
 
     def item_completed(self, results, item, info):
         if results:
-            item['img_urls'] = [itm[1] for itm in results if itm[0]]
-        print()
+            item['image_urls'] = [itm[1] for itm in results if itm[0]]
         return item
