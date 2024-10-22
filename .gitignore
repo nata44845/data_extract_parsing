@@ -3,6 +3,8 @@
 *.csv
 !books_data.json
 !inflation.json
+!Large_Movie_Review_sentiments.test.csv.zip
+!Large_Movie_Review_sentiments.train.csv.zip
 
 /venv
 /**/venv/*
