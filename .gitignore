@@ -1,5 +1,6 @@
 *.zip
 *.json
+*.csv
 !books_data.json
 !inflation.json
 
