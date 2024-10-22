@@ -3,6 +3,7 @@ from scrapy.http import HtmlResponse
 from ..items import PhotoparserItem
 from scrapy.loader import ItemLoader
 from itemloaders.processors import MapCompose
+from pprint import pprint
 
 class UpsplashSpider(scrapy.Spider):
     name = "upsplash"
@@ -16,9 +17,10 @@ class UpsplashSpider(scrapy.Spider):
         links = response.xpath("//a[@class='zNNw1']/@href").getall()
         for i, link in enumerate(links):
             links[i] = f"https://unsplash.com{link}"
-        print(links)
-        for link in links:
-            yield response.follow(link, callback = self.parse_img)
+        pprint(links)
+        yield response.follow(links[0], callback=self.parse_img)
+        # for link in links:
+        #     yield response.follow(link, callback = self.parse_img)
         print()
 
     def parse_img(self, response: HtmlResponse):
@@ -28,11 +30,10 @@ class UpsplashSpider(scrapy.Spider):
         name = response.xpath("//h1[@class='vev3s']/text()").get()
         loader.add_value('name', name)
 
-        categories = response.xpath('//div[@class="zDHt2 N9mmz"]/a/text()').getall()
+        categories = response.xpath('//a[@class="m7tXD jhw7y TYpvC"]/text()').getall()
         loader.add_value('categories', categories)
-        print()
-        image_url = response.xpath("//div[@class='WxXog']/img/@src").get()
-        loader.add_value('image_urls', image_url)
 
+        image_urls = response.xpath("//div[@class='WxXog']/img/@srcset").get()
+        loader.add_value('image_urls', image_urls)
 
         yield loader.load_item()

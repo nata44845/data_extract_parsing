@@ -64,6 +64,7 @@ ROBOTSTXT_OBEY = False
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    "photoparser.pipelines.PhotoparserPipeline": 300,
+   "photoparser.pipelines.PhotoPipeline": 200,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
