@@ -1,11 +1,12 @@
 *.zip
 *.json
+*.csv
 
 !books_data.json
 !inflation.json
 !Large_Movie_Review_sentiments.test.csv.zip
 !Large_Movie_Review_sentiments.train.csv.zip
-cats.csv
+!cats.csv
 
 /venv
 /**/venv/*
