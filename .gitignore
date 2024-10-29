@@ -8,6 +8,7 @@
 !Large_Movie_Review_sentiments.train.csv.zip
 !cats.csv
 !tweets.csv
+!/homework8/*.csv
 
 /venv
 /**/venv/*
