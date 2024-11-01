@@ -9,6 +9,7 @@
 !cats.csv
 !tweets.csv
 !/homework8/*.csv
+!football.csv
 
 /venv
 /**/venv/*
