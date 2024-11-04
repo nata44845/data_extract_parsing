@@ -10,6 +10,8 @@
 !tweets.csv
 !/homework8/*.csv
 !football.csv
+!critic_reviews.csv
+!temp.csv
 
 /venv
 /**/venv/*
